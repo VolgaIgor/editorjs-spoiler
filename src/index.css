@@ -1,0 +1,32 @@
+.cdx-spoiler_wrapper {
+    --spoiler-color: rgba(201, 201, 204, .48);
+    border-radius: 3px;
+    background-color: var(--spoiler-color);
+    padding-bottom: 1px;
+}
+
+.cdx-spoiler_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px;
+    padding-left: 15px;
+}
+
+.cdx-spoiler_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cdx-spoiler_editor {
+    padding: 0 12px 0 16px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 2px 8px 6px;
+}
+
+.ce-toolbar--opened {
+    z-index: 1;
+}

@@ -1,0 +1,37 @@
+{
+    "name": "editorjs-spoiler",
+    "version": "1.0.0",
+    "keywords": [
+      "codex editor",
+      "spoiler",
+      "tool",
+      "editor.js",
+      "editorjs"
+    ],
+    "description": "Spoiler Block Tool for Editor.js",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/VolgaIgor/editorjs-spoiler.git"
+    },
+    "main": "./dist/bundle.js",
+    "scripts": {
+      "build": "webpack --mode production",
+      "build:dev": "webpack --mode development --watch"
+    },
+    "author": "Igor Shuvalov «VolgaIgor»",
+    "dependencies": {
+        "@codexteam/icons": "^0.3.2"
+    },
+    "devDependencies": {
+      "css-loader": "^7.1.2",
+      "raw-loader": "^4.0.2",
+      "style-loader": "^4.0.0",
+      "webpack": "^5.96.1",
+      "webpack-cli": "^5.1.4"
+    },
+    "bugs": {
+      "url": "https://github.com/VolgaIgor/editorjs-spoiler/issues"
+    },
+    "homepage": "https://github.com/VolgaIgor/editorjs-spoiler#readme"
+  }
