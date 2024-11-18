@@ -77,4 +77,4 @@ This Tool returns `data` with following format
 | Field          | Type       | Description                      |
 | -------------- | ---------  | -------------------------------- |
 | caprion        | `string`   | Spoiler caption                  |
-| content        | `object[]` | Array of saved data in spoiler   |
+| content        | `object`   | Saved EditorJS data in spoiler   |

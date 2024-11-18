@@ -63,7 +63,7 @@ export default class Spoiler {
 
     this._data = {
       caption: '',
-      content: []
+      content: {}
     };
     this.data = data;
 
@@ -108,11 +108,9 @@ export default class Spoiler {
       this._captionInput.value = this.data.caption;
     }
 
-    this._data.content = data.content || [];
+    this._data.content = data.content || {};
     if (this._editor) {
-      this._editor.blocks.render({
-        blocks: this.data.content || []
-      });
+      this._editor.blocks.render(this.data.content);
     }
   }
 
@@ -155,12 +153,9 @@ export default class Spoiler {
     rootNode.appendChild(wrapper);
     this._rootNode = rootNode;
 
-    const initialData = {
-      blocks: this.data.content || []
-    };
     this._editor = new this.config.editorLibrary({
       holder: editorNode,
-      data: initialData,
+      data: this.data.content,
       tools: this.config.editorTools,
       tunes: this.config.editorTunes,
       minHeight: 150,
@@ -185,7 +180,7 @@ export default class Spoiler {
 
     return {
       caption: this._captionInput.value,
-      content: saveData?.blocks || []
+      content: saveData || {}
     };
   }
 }
